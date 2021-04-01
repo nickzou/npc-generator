@@ -1,0 +1,134 @@
+{
+    "NPCS":[
+        {
+            "name": "Alexandria Ocasio Cortez III Jr.",
+            "portrait-face": "https://placeholder.com/600.png?text=face",
+            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "age": "ancient",
+            "species": ["human","elf"],
+            "story": [
+                "Lost their family in the war.",
+                "Injured themselves recently.",
+                "Lost all their money to gambling"
+            ],
+            "character": [
+                "Kind warm heart.",
+                "Chip on their soldier."
+            ],
+            "voice": "dull",
+            "physique": [
+                "pretty",
+                "athletic"
+            ],
+            "drives": [
+                "Hunting a great beast.",
+                "Seeking to reclaim a lost treasure"
+            ],
+            "possessions":[
+                {
+                    "display": "Old sword",
+                    "type": "weapon"
+                },
+                {
+                    "display": "A magic amulet",
+                    "type": "magic"
+                },
+                {
+                    "display": "Tooth of the great beast",
+                    "type": "drive"
+                },
+                {
+                    "display": "a peasents pocket change",
+                    "type": "wealth"
+                },
+                {
+                    "display": "red kelp",
+                    "type": "personal"
+                },
+                {
+                    "display": "old bag",
+                    "type": "personal"
+                },
+                {
+                    "display": "personalized jewlery",
+                    "type": "personal"
+                }
+            ]
+        },
+        {
+            "name": "Tim",
+            "portrait-face": "https://placeholder.com/600.png?text=face",
+            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "age": "kid",
+            "species": ["orc"],
+            "story": [
+                "Lived in the wilderness.",
+                "Thrice divorced."
+            ],
+            "character": [
+                "Grumpy"
+            ],
+            "voice": "Raspy",
+            "physique": [
+                "tall",
+                "skinny"
+            ],
+            "drives": [
+                "Trying to get back home."
+            ],
+            "possessions":[
+                {
+                    "display": "family pendant",
+                    "type": "drive"
+                },
+                {
+                    "display": "merchants daily earnings",
+                    "type": "wealth"
+                },
+                {
+                    "display": "stick",
+                    "type": "personal"
+                }
+            ]
+        },
+        {
+            "name": "Urük Źianvøk",
+            "portrait-face": "https://placeholder.com/600.png?text=face",
+            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "age": "adult",
+            "species": ["dragonborn"],
+            "story": [
+                "Has sailed the vast ocean.",
+                "Spent a long time behind bars."
+            ],
+            "character": [
+                "depressed",
+                "full of wonder"
+            ],
+            "voice": "squeaky",
+            "physique": [
+                "short",
+                "sketchy",
+                "gaunt"
+            ],
+            "drives": [
+                "Trying to buy a ship",
+                "out for revenge"
+            ],
+            "possessions":[
+                {
+                    "display": "a boat",
+                    "type": "mount"
+                },
+                {
+                    "display": "a brides dowery",
+                    "type": "wealth"
+                },
+                {
+                    "display": "compass",
+                    "type": "personal"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+// Imported Bootstrap components
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+// @import 'overrides/bootstrap';
+// @import '~bootstrap/scss/mixins';
+// @import '~bootstrap/scss/reboot';
+// @import '~bootstrap/scss/grid';
+// @import "~bootstrap/scss/utilities";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=PT+Serif&display=swap');
+
+.dropshadow {
+   box-shadow: 0px 4px 4px rgba(black, 0.25); 
+}
+
+.almendra {
+    font-family: 'Almendra', serif;
+}
+
+.pt-serif {
+    font-family: 'PT Serif', serif;
+}

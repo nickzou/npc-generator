@@ -11,18 +11,32 @@
                 "Injured themselves recently.",
                 "Lost all their money to gambling"
             ],
-            "character": [
-                "Kind warm heart.",
-                "Chip on their soldier."
-            ],
             "voice": "dull",
-            "physique": [
-                "pretty",
-                "athletic"
-            ],
-            "drives": [
-                "Hunting a great beast.",
-                "Seeking to reclaim a lost treasure"
+            "traits": [
+                {
+                    "description": "Kind warm hearted",
+                    "type": "character"
+                },
+                {
+                    "description": "Chip on their shoulder",
+                    "type": "character"
+                },
+                {
+                    "description": "pretty",
+                    "type": "physique"
+                },
+                {
+                    "description": "athletic",
+                    "type": "physique"
+                },
+                {
+                    "description": "Hunting great beast",
+                    "type": "drives"
+                },
+                {
+                    "description": "Seeking to reclaim a lost treasure",
+                    "type": "drives"
+                }
             ],
             "possessions":[
                 {
@@ -65,16 +79,24 @@
                 "Lived in the wilderness.",
                 "Thrice divorced."
             ],
-            "character": [
-                "Grumpy"
-            ],
-            "voice": "Raspy",
-            "physique": [
-                "tall",
-                "skinny"
-            ],
-            "drives": [
-                "Trying to get back home."
+            "voice": "raspy",
+            "traits": [
+                {
+                    "description": "Grumpy",
+                    "type": "character"
+                },
+                {
+                    "description": "tall",
+                    "type": "physique"
+                },
+                {
+                    "description": "skinny",
+                    "type": "physique"
+                },
+                {
+                    "description": "Trying to get back home",
+                    "type": "drives"
+                }
             ],
             "possessions":[
                 {
@@ -101,19 +123,36 @@
                 "Has sailed the vast ocean.",
                 "Spent a long time behind bars."
             ],
-            "character": [
-                "depressed",
-                "full of wonder"
-            ],
             "voice": "squeaky",
-            "physique": [
-                "short",
-                "sketchy",
-                "gaunt"
-            ],
-            "drives": [
-                "Trying to buy a ship",
-                "out for revenge"
+            "traits": [
+                {
+                    "description": "depressed",
+                    "type": "character"
+                },
+                {
+                    "description": "full of wonder",
+                    "type": "character"
+                },
+                {
+                    "description": "sketchy",
+                    "type": "character"
+                },
+                {
+                    "description": "short",
+                    "type": "physique"
+                },
+                {
+                    "description": "gaunt",
+                    "type": "physique"
+                },
+                {
+                    "description": "Trying to buy a ship",
+                    "type": "drives"
+                },
+                {
+                    "description": "Out for revenge",
+                    "type": "drives"
+                }
             ],
             "possessions":[
                 {

@@ -1,24 +1,27 @@
+//External Libaries
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+//Data
+import data from './exampledata.json';
+
+//Global Styles
+import './styles/App.scss';
+
+//Components
+import NPCListItem from './components/NPCListItem/NPCListItem';
+
+//Functions
+import species from './functions/species';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        this is the header
       </header>
+      <main>
+        <NPCListItem name={data.NPCS[0].name} age={data.NPCS[0].age} species={species(data.NPCS[0].species)}/>
+      </main>
     </div>
   );
 }

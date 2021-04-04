@@ -2,8 +2,8 @@
     "NPCS":[
         {
             "name": "Alexandria Ocasio Cortez III Jr.",
-            "portrait-face": "https://placeholder.com/600.png?text=face",
-            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "portrait-face": "https://i.imgur.com/s71yh2E.png",
+            "portrait-bg": "https://i.imgur.com/dC4x8Hr.jpeg",
             "age": "ancient",
             "species": ["human","elf"],
             "story": [
@@ -71,8 +71,8 @@
         },
         {
             "name": "Tim",
-            "portrait-face": "https://placeholder.com/600.png?text=face",
-            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "portrait-face": "https://i.imgur.com/ZHdcE4Q.png",
+            "portrait-bg": "https://i.imgur.com/dC4x8Hr.jpeg",
             "age": "kid",
             "species": ["orc"],
             "story": [
@@ -115,8 +115,8 @@
         },
         {
             "name": "Urük Źianvøk",
-            "portrait-face": "https://placeholder.com/600.png?text=face",
-            "portrait-bg": "https://placeholder.com/1280x720.png",
+            "portrait-face": "https://i.imgur.com/jbGefK4.png",
+            "portrait-bg": "https://i.imgur.com/dC4x8Hr.jpeg",
             "age": "adult",
             "species": ["dragonborn"],
             "story": [

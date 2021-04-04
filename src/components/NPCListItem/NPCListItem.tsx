@@ -8,6 +8,7 @@ import breakpoints from '../../variables/breakpoints';
 const Wrapper = styled.div`
     position: relative;
     background-color: red;
+    margin-bottom: 24px;
     @media ${breakpoints.laptop} {
         width: 400px;
         height: 550px;
@@ -28,6 +29,47 @@ const ImageWrapper = styled.div`
         padding-top: 0;
         height: 340px;
         flex-shrink: 0;
+    }
+`;
+
+const Portrait = styled.div`
+    position: absolute;
+    z-index: 1;
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    bottom: 0;
+    left: 30px;
+    @media ${breakpoints.tablet} {
+        width: 180px;
+        height: 180px;
+    }
+    @media ${breakpoints.laptop} {
+        width: 270px;
+        height: 270px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+`;
+
+const Background = styled.div`
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    overflow: hidden;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: auto;
     }
 `;
 
@@ -81,7 +123,14 @@ const ButtonWrapper = styled.div`
 const NPCListItem = (props:any) => {
     return (
         <Wrapper className="dropshadow">
-            <ImageWrapper></ImageWrapper>
+            <ImageWrapper>
+                <Portrait>
+                    <img src={props.portrait} />
+                </Portrait>
+                <Background>
+                    <img src={props.background} />
+                </Background>
+            </ImageWrapper>
             <ContentWrapper>
                 <Name className="almendra">{props.name}</Name>
                 <Subtitle className="pt-serif">{props.age}/{props.species}</Subtitle>
@@ -95,6 +144,8 @@ const NPCListItem = (props:any) => {
 };
 
 NPCListItem.propTypes = {
+    portrait: PropTypes.string,
+    background: PropTypes.string,
     name: PropTypes.string,
     age: PropTypes.string,
     species: PropTypes.string

@@ -84,7 +84,6 @@ const ContentWrapper = styled.div`
         flex-grow: 1;
         text-align: center;
         justify-content: center;
-        padding-bottom: 60px;
     }
 `;
 
@@ -107,10 +106,13 @@ const ButtonWrapper = styled.div`
     transform: translateY(-50%);
     display: flex;
     @media ${breakpoints.laptop} {
+        position: relative;
         top: initial;
-        bottom: 30px;
-        right: 50%;
-        transform: translate(50%, -50%);
+        right: initial;
+        transform: initial;
+        text-align: center;
+        justify-content: center;
+        padding-top: 30px;
     }
     button {
         margin-right: 8px;

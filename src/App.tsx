@@ -6,8 +6,6 @@ import React, {useState} from 'react';
 import data from './exampledata.json';
 
 //Global Styles
-//  this is wrong and needs to be changed
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 //Components
@@ -24,9 +22,6 @@ function App() {
 
   const [activeNPC, setActiveNPC] = useState(data.NPCS[0])
   const [modalToggle, setModalToggle] = useState(true)
-
-  console.log(activeNPC)
-
 
   return (
     <div className="App">

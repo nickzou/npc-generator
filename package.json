@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bootstrap-styled/provider": "^2.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -13,7 +14,6 @@
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.9",
     "bootstrap": "^5.0.0-beta3",
-    "bootstrap-styled": "^2.7.2",
     "capitalize": "^2.0.3",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",

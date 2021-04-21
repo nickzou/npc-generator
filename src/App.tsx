@@ -1,10 +1,13 @@
 //External Libaries
 import React, {useState} from 'react';
 
+
 //Data
 import data from './exampledata.json';
 
 //Global Styles
+//  this is wrong and needs to be changed
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 //Components
@@ -14,6 +17,8 @@ import NPCModal from './components/NPCModal/NPCModal';
 
 //Functions
 import species from './functions/species';
+
+
 
 function App() {
 

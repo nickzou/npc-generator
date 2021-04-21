@@ -5,43 +5,53 @@ import styled from 'styled-components';
 import breakpoints from '../../variables/breakpoints';
 
 export const Wrapper = styled.div`
+    position: absolute;
     width: 100%;
     padding: 1rem;
     background: rgb(200,200,200);
+    z-index: 100;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform 250ms;
+    display: flex;
+    justify-content: center;
+    &.active{
+        transform: translateY(0%); 
+    }
+    section{
+        margin-bottom: 40px;
+    }
 `;
+
+export const ButtonWrapper = styled.div`
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    z-index: 1;
+    button {
+        margin-right: 8px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+`
 
 export const ImageWrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 0;
-    @media ${breakpoints.tablet} {    
-        padding-top: 29.3%;
-    }
-    @media ${breakpoints.laptop} {
-        padding-top: 0;
-        height: 340px;
-        flex-shrink: 0;
-    }
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 `;
 
 export const Portrait = styled.div`
     position: absolute;
     z-index: 1;
-    width: 125px;
-    height: 125px;
+    width: auto;
+    height: 80%;
     object-fit: contain;
-    bottom: 0;
-    left: 30px;
-    @media ${breakpoints.tablet} {
-        width: 180px;
-        height: 180px;
-    }
-    @media ${breakpoints.laptop} {
-        width: 270px;
-        height: 270px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     img {
         max-width: 100%;
         max-height: 100%;
@@ -65,20 +75,6 @@ export const Background = styled.div`
     }
 `;
 
-export const ContentWrapper = styled.div`
-    position: relative;
-    width: calc(100% - 24px);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    @media ${breakpoints.laptop} {
-        flex-grow: 1;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 60px;
-    }
-`;
 
 export const Name = styled.h2`
     font-size: 21px;
@@ -92,22 +88,19 @@ export const Subtitle = styled.span`
     font-size: 14px;
 `;
 
-export const ButtonWrapper = styled.div`
-    position: absolute;
-    top: 0;
-    right: 12px;
-    transform: translateY(-50%);
+export const Pocession = styled.div`
     display: flex;
-    @media ${breakpoints.laptop} {
-        top: initial;
-        bottom: 30px;
-        right: 50%;
-        transform: translate(50%, -50%);
-    }
-    button {
-        margin-right: 8px;
-        &:last-of-type {
-            margin-right: 0;
-        }
-    }
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #dedede;
+    margin-bottom: 1rem;
 `;
+
+export const Description = styled.div`
+    margin-bottom: 1rem;
+    ul{
+        padding-left: 1rem;
+    }
+`
+

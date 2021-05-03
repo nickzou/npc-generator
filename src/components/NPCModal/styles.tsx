@@ -52,6 +52,8 @@ export const Portrait = styled.div`
     width: auto;
     height: 80%;
     object-fit: contain;
+    display: flex;
+    align-items: flex-end;
     img {
         max-width: 100%;
         max-height: 100%;
@@ -68,10 +70,10 @@ export const Background = styled.div`
     object-fit: cover;
     overflow: hidden;
     img {
+        height: auto;
+        width: auto;
         min-width: 100%;
         min-height: 100%;
-        width: 100%;
-        height: auto;
     }
 `;
 

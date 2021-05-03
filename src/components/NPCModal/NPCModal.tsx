@@ -49,7 +49,7 @@ const NPCModal = ( props : props ) => {
                     <button>X</button>
                 </ButtonWrapper>
                 <div className="row align-items-center no-gutters">
-                    <section className="col-md">
+                    <section className="col col-12 col-md-6">
                         <ImageWrapper>
                             <Portrait>
                                 <img src={npc.portraitFace} alt={npc.name}/>
@@ -59,13 +59,13 @@ const NPCModal = ( props : props ) => {
                             </Background>
                         </ImageWrapper>
                     </section>
-                    <section className="col-md">
+                    <section className="col col-12 col-md-6">
                         <Name className="almendra">{npc.name}</Name>
                         <Subtitle className="pt-serif">{npc.age}/{npc.species}</Subtitle>
                     </section>
                 </div>
                 <section className="row">
-                    <div className="col-md">
+                    <div className="col col-12 col-md-6">
                         <Description>
                             <Name className="pt-serif">Character</Name>
                             <ul>
@@ -83,7 +83,7 @@ const NPCModal = ( props : props ) => {
                         
 
                     </div>
-                    <div className="col-md">
+                    <div className="col col-12 col-md-6">
                         <Description>
                             <Name className="pt-serif">Drives</Name>
                             <ul>
@@ -104,10 +104,10 @@ const NPCModal = ( props : props ) => {
                 <section className="row">
                     <Name className="pt-serif">Pocessions</Name>
                     <div className="row">
-                        <div className="col-md">
+                        <div className="col col-12 col-md-6">
                             {npc.possessions.map((item, index)=>index >= Math.round(npc.possessions.length/2) && (<Pocession>{item.display}</Pocession>) )}
                         </div>
-                        <div className="col-md">
+                        <div className="col col-12 col-md-6">
                             {npc.possessions.map((item, index)=>index < Math.round(npc.possessions.length/2) && (<Pocession>{item.display}</Pocession>) )}
                         </div>
                     </div>

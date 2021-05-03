@@ -1,8 +1,3 @@
-//External Libraries
-// import styled from 'styled-components';
-
-//Internal Utilities
-// import breakpoints from '../../variables/breakpoints';
 
 //Components Styles
 import {

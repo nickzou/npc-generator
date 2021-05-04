@@ -36,17 +36,18 @@ interface npcData {
 
 interface props {
     npcData: npcData,
-    modalToggle: boolean
+    modalToggle: boolean,
+    setModalToggle: any
 }
 
 const NPCModal = ( props : props ) => {
     const npc = props.npcData
     return (
         <Wrapper className={`${props.modalToggle ? 'active': ''} dropshadow`}>
-            <article className="container-md">
+            <article className="container">
                 <ButtonWrapper>
                     <button>save</button>
-                    <button>X</button>
+                    <button onClick={()=>props.setModalToggle(false)}>X</button>
                 </ButtonWrapper>
                 <div className="row align-items-center no-gutters">
                     <section className="col col-12 col-md-6">

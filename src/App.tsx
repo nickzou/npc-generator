@@ -32,6 +32,7 @@ function App() {
           <NPCModal 
             npcData={activeNPC}
             modalToggle={modalToggle}
+            setModalToggle={setModalToggle}
           ></NPCModal>
 
           {data.NPCS.map((npc,index) => <NPCListItem 
@@ -41,6 +42,9 @@ function App() {
             name={npc.name} 
             age={npc.age} 
             species={species(npc.species)}
+            npcRawData={npc}
+            setModalToggle={setModalToggle}
+            setActiveNPC={setActiveNPC}
           />)}
       </main>
     </div>

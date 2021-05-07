@@ -27,7 +27,7 @@ interface props {
 const NPCListItem = (props : props) => {
     return (
         <Dropshadow>
-            <Wrapper className="dropshadow">
+            <Wrapper>
                 <ImageWrapper>
                     <Portrait>
                         <img src={props.portrait} />
